@@ -1,0 +1,14 @@
+.footer {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 150px;
+    background-color: #382c5d;
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer_content {
+    width: 25%;
+    padding: 20px 0px;
+}

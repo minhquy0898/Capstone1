@@ -1,0 +1,26 @@
+.product_event {
+    display: flex;
+    width: 26%;
+    padding: 20px 20px;
+}
+.event_product {
+    background-color: #f7f7f7;
+}
+
+.event_main_name {
+    background-color: #382c5d;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.event_main_img {
+    width: 100%;
+    height: 203px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}

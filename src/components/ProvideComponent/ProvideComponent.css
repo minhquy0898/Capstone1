@@ -1,0 +1,25 @@
+.provide_info {
+    display: flex;
+    padding: 0px 150px;
+    flex-wrap: wrap;
+}
+.provide_main {
+    padding: 20px 37px;
+}
+
+.provide_main_name {
+    background-color: #382c5d;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.provide_main_img {
+    width: 300px;
+    height: 250px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}

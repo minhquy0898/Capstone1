@@ -1,0 +1,33 @@
+.mg-l-70 {
+    margin-left: 70px;
+}
+
+.mg-l-20 {
+    margin-left: 20px;
+}
+
+.w-33 {
+    width: 33.33333%;
+}
+
+.content_total {
+    margin-top: 60px;
+}
+
+.content_info_product {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+    width: 80%;
+    /* width: 50%; */
+    justify-content: space-around;
+    margin: 0px auto;
+}
+
+.content_title {
+    color: #382c5d;
+    text-transform: uppercase;
+    font-size: 20px;
+}
