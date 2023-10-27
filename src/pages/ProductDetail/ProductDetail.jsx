@@ -1,10 +1,17 @@
 import React from 'react'
-
+import ProductDetailComponent from '../../components/ProductDetailComponent/ProductDetailComponent'
+import IntroduceComponent from '../../components/IntroduceComponent/IntroduceComponent'
 const ProductDetail = () => {
     return (
-        <div>
-            Trang Product Detail
-        </div>
+        <>
+
+            <div>
+                <IntroduceComponent />
+            </div>
+            <div>
+                <ProductDetailComponent />
+            </div>
+        </>
     )
 }
 

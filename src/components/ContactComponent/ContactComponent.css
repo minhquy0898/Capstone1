@@ -1,0 +1,115 @@
+/* .contact_main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button {
+    border: none;
+    position: relative;
+    padding: 0;
+    background-color: transparent;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.button.active:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: yellow;
+}
+
+.contactComponent_info button {
+    font-size: 20px;
+    background-color: #382c5d;
+}
+
+.product_detail_right {
+    width: 30%;
+    height: 300px;
+    background-color: #fff;
+}
+
+.product_detail_infoName {
+    background-color: #382c5d;
+    width: 353px;
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    color: #fff;
+    align-items: center;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+} */
+
+.product_detail_infoName {
+    background-color: #382c5d;
+    display: flex;
+    justify-content: space-around;
+}
+
+.product_detail_infoName > div {
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.product_detail_infoName > div::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #f9d423;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s;
+}
+
+.product_detail_infoName {
+    background-color: #382c5d;
+    height: 50px;
+    display: flex;
+}
+
+.product_detail_infoName > div:hover::after {
+    width: 100%;
+}
+
+.product_detail_infoName > div.active {
+    color: #f9d423;
+}
+
+.product_detail_infoName > div.active::after {
+    width: 100%;
+}
+
+.contact_description {
+    padding: 41px 66px;
+}
+
+.price_detail {
+    display: flex;
+    justify-content: space-around;
+    padding: 53px 0px;
+}
+.btn_contact {
+    background-color: #f9d423;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    padding: 14px 21px;
+    border-radius: 8px;
+    color: #000;
+    cursor: pointer;
+}
