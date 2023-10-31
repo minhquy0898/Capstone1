@@ -1,0 +1,13 @@
+.header_search {
+    display: flex;
+}
+
+.header_search input {
+    border-radius: 0px;
+    height: 39px;
+    width: 335px;
+}
+.header_search button {
+    border-radius: 0px;
+    border: none;
+}

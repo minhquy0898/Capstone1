@@ -5,15 +5,21 @@
   "dependencies": {
     "@ant-design/cssinjs": "^1.17.2",
     "@reduxjs/toolkit": "^1.9.7",
+    "@tanstack/react-query": "^5.4.3",
+    "@tanstack/react-query-devtools": "^5.4.3",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "antd": "^5.10.1",
+    "axios": "^1.6.0",
+    "jwt-decode": "^4.0.0",
     "owl.carousel": "^2.3.4",
+    "proxy": "^2.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icon": "^1.0.0",
     "react-icons": "^4.11.0",
+    "react-query": "^3.39.3",
     "react-redux": "^8.1.3",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.16.0",
@@ -48,5 +54,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://localhost:3001"
 }
