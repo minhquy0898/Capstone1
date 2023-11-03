@@ -1,0 +1,31 @@
+.content {
+    height: 500 px;
+}
+
+.content_top {
+    margin: 80px 80px;
+    text-align: justify;
+}
+
+.content_desc {
+    font-size: 20px;
+}
+
+.content_bottom {
+    margin-left: 55px;
+}
+
+.form-group {
+    margin: 55px 20px;
+    display: block;
+}
+
+.form_label {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn-Submit {
+    display: block;
+}
