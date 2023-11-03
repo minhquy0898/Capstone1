@@ -6,6 +6,12 @@ import * as UserService from '../../services/UserService'
 import { useMutationHook } from '../../hooks/useMutationHook'
 import * as message from '../../components/Message/Message'
 import { updateUser } from '../../redux/slides/userSlide'
+import Upload from 'antd/es/upload/Upload'
+import { Button } from 'antd'
+import { UploadOutlined } from '@ant-design/icons'
+import { getBase64 } from '../../utils'
+import { WrapperUploadFile } from './style'
+
 
 
 const Profile = () => {
@@ -24,7 +30,6 @@ const Profile = () => {
 
     const dispatch = useDispatch()
     const { data, isLoading, isSuccess, isError } = mutation
-    console.log('data', data)
 
     useEffect(() => {
         setEmail(user?.email)
@@ -63,9 +68,12 @@ const Profile = () => {
         setAddress(value)
 
     }
-    const handleOnchangeAvatar = (value) => {
-        setAvatar(value)
-
+    const handleOnchangeAvatar = async ({ fileList }) => {
+        const file = fileList[0]
+        if (!file.url && !file.preview) {
+            file.preview = await getBase64(file.originFileObj);
+        }
+        setAvatar(file.preview)
     }
     const handleUpdate = () => {
         mutation.mutate({ id: user?.id, email, name, phone, address, avatar, access_token: user?.access_token })
@@ -125,11 +133,22 @@ const Profile = () => {
                 </div>
                 <div className='profile_input'>
                     <label htmlFor="avatar" className='profile_label'>Avatar</label>
-                    <InputFormComponent className='w-300'
+                    <WrapperUploadFile onChange={handleOnchangeAvatar} maxCount={1}>
+                        <Button icon={<UploadOutlined />}>Select File</Button>
+                    </WrapperUploadFile>
+                    {avatar && (
+                        <img src={avatar} style={{
+                            height: '60px',
+                            width: '60px',
+                            borderRadius: '50%',
+                            objectFit: 'cover'
+                        }} alt='avatar' />
+                    )}
+                    {/* <InputFormComponent className='w-300'
                         id="avatar"
                         value={avatar}
                         onChange={handleOnchangeAvatar}
-                    />
+                    /> */}
                     <button
                         onClick={handleUpdate}
                         className='btn_update'>Cập nhật

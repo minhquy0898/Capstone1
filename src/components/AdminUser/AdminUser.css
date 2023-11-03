@@ -1,0 +1,15 @@
+.wrapper_header {
+    color: 000;
+    font-size: 14px;
+}
+
+.wrapper_button {
+    margin-top: 20px;
+}
+
+.btn_button {
+    height: 150px;
+    width: 150px;
+    border-radius: 6px;
+    border-style: dashed;
+}

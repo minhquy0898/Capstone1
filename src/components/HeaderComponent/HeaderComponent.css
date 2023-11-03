@@ -9,7 +9,7 @@
     text-transform: uppercase;
     color: #fff;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     margin-right: 150px;
     list-style: none;
 }
@@ -39,5 +39,5 @@
 }
 
 .list_item_user {
-    margin-right: 56%;
+    margin-right: 38%;
 }
